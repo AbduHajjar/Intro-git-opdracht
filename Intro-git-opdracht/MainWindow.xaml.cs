@@ -69,6 +69,13 @@ namespace Intro_git_opdracht
                         break;
                 }
             }
+
+        }
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            Display.Text = "0";
+            _lastValue = 0;
+            _lastOperation = string.Empty;
         }
 
 
