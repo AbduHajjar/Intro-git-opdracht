@@ -48,6 +48,29 @@ namespace Intro_git_opdracht
             }
         }
 
+        private void Equals_Click(object sender, RoutedEventArgs e)
+        {
+            double newValue;
+            if (double.TryParse(Display.Text, out newValue))
+            {
+                switch (_lastOperation)
+                {
+                    case "+":
+                        Display.Text = (_lastValue + newValue).ToString();
+                        break;
+                    case "-":
+                        Display.Text = (_lastValue - newValue).ToString();
+                        break;
+                    case "*":
+                        Display.Text = (_lastValue * newValue).ToString();
+                        break;
+                    case "/":
+                        Display.Text = (_lastValue / newValue).ToString();
+                        break;
+                }
+            }
+        }
+
 
     }
 }
