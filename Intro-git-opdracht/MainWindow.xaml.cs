@@ -11,14 +11,18 @@ using System.Windows.Shapes;
 
 namespace Intro_git_opdracht
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private double _lastValue;
+        private string _lastOperation;
+
         public MainWindow()
         {
             InitializeComponent();
         }
+
+       
+
+        
     }
 }
