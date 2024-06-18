@@ -37,6 +37,17 @@ namespace Intro_git_opdracht
             }
         }
 
+        private void Operation_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null)
+            {
+                _lastValue = double.Parse(Display.Text);
+                _lastOperation = button.Content.ToString();
+                Display.Text = "0";
+            }
+        }
+
 
     }
 }
