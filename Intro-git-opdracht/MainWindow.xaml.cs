@@ -21,8 +21,22 @@ namespace Intro_git_opdracht
             InitializeComponent();
         }
 
-       
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null)
+            {
+                if (Display.Text == "0" && button.Content.ToString() != ".")
+                {
+                    Display.Text = button.Content.ToString();
+                }
+                else
+                {
+                    Display.Text += button.Content.ToString();
+                }
+            }
+        }
 
-        
+
     }
 }
